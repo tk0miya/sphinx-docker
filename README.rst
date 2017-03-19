@@ -18,15 +18,15 @@ Usage
 
 Build HTML document::
 
-  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:html
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-docker:html
 
 Build EPUB document::
 
-  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:epub
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-docker:epub
 
 Build PDF document::
 
-  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:epub
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-docker:epub
 
 Tips
 ----
