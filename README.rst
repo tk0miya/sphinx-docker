@@ -6,35 +6,35 @@ Docker image for Sphinx build.
 Images
 ------
 
-* sphinx-doc/base
-* sphinx-doc/html
-* sphinx-doc/epub
-* sphinx-doc/pdf
+* tk0miya/sphinx-docker:base
+* tk0miya/sphinx-docker:html
+* tk0miya/sphinx-docker:epub
+* tk0miya/sphinx-docker:pdf
 
-.. note:: ``sphinx-doc/pdf`` contains TeXLive packages. So the image is very large (over 2GB!).
+.. note:: ``tk0miya/sphinx-docker:pdf`` contains TeXLive packages. So the image is very large (over 2GB!).
 
 Usage
 -----
 
 Build HTML document::
 
-  $ docker run --rm /path/to/document:/docs sphinx-doc/html
+  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:html
 
 Build EPUB document::
 
-  $ docker run --rm /path/to/document:/docs sphinx-doc/epub
+  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:epub
 
 Build PDF document::
 
-  $ docker run --rm /path/to/document:/docs sphinx-doc/epub
+  $ docker run --rm /path/to/document:/docs tk0miya/sphinx-docker:epub
 
 Tips
 ----
 
-If you would like to install dependencies, use ``sphinx-doc/base`` as a base image::
+If you would like to install dependencies, use ``tk0miya/sphinx-docker:base`` as a base image::
 
   # in your Dockerfile
-  FROM sphinx-doc/base
+  FROM tk0miya/sphinx-docker:base
 
   WORKDIR /docs
   ADD requirements.txt
