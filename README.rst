@@ -38,6 +38,6 @@ If you would like to install dependencies, use ``tk0miya/sphinx-base`` as a base
   FROM tk0miya/sphinx-base
 
   WORKDIR /docs
-  ADD requirements.txt
-  RUN pip install -r requirements.txt
+  ADD requirements.txt /docs
+  RUN pip3 install -r requirements.txt
   CMD make html
