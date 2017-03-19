@@ -1,5 +1,5 @@
-FROM tk0miya/sphinx-base:latest
+FROM tk0miya/sphinx-base-pdf:latest
 MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
 
 WORKDIR /docs
-CMD make html
+CMD make latexpdf
