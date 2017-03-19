@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:xenial
 MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
 
 RUN mkdir /docs
