@@ -7,6 +7,8 @@ RUN apt-get install -y \
       texlive-latex-extra \
       texlive-fonts-recommended \
       texlive-fonts-extra \
+      texlive-lang-cjk \
+      texlive-lang-japanese \
       texlive-luatex \
       texlive-xetex \
  && apt-get autoremove \
