@@ -27,7 +27,7 @@ Build EPUB document::
 
 Build PDF document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-epub
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-pdf
 
 Tips
 ----
