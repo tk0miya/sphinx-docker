@@ -2,6 +2,7 @@ FROM tk0miya/sphinx-base:latest
 MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
 
 RUN apt-get install -y \
+      latexmk \
       lmodern \
       texlive-latex-recommended \
       texlive-latex-extra \
