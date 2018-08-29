@@ -12,6 +12,7 @@ RUN apt-get update \
       python3-dev \
       python3-pip \
       python3-pil \
+      unzip \
       vim \
  && apt-get autoremove \
  && apt-get clean
