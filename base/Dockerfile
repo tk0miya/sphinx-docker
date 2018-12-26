@@ -18,3 +18,5 @@ RUN apt-get update \
  && apt-get clean
 
 RUN pip3 install Sphinx==1.8.2
+WORKDIR /docs
+ENTRYPOINT ["make"]

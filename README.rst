@@ -8,26 +8,23 @@ Images
 
 * tk0miya/sphinx-base
 * tk0miya/sphinx-base-pdf
-* tk0miya/sphinx-html
-* tk0miya/sphinx-epub
-* tk0miya/sphinx-pdf
 
-.. note:: ``tk0miya/sphinx-pdf`` contains TeXLive packages. So the image is very large (over 2GB!).
+.. note:: ``tk0miya/sphinx-base-pdf`` contains TeXLive packages. So the image is very large (over 2GB!).
 
 Usage
 -----
 
 Build HTML document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-html
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-base html
 
 Build EPUB document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-epub
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-base epub
 
 Build PDF document::
 
-  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-pdf
+  $ docker run --rm -v /path/to/document:/docs tk0miya/sphinx-base-pdf
 
 Tips
 ----
@@ -37,7 +34,6 @@ If you would like to install dependencies, use ``tk0miya/sphinx-base`` as a base
   # in your Dockerfile
   FROM tk0miya/sphinx-base
 
-  WORKDIR /docs
   ADD requirements.txt /docs
   RUN pip3 install -r requirements.txt
-  CMD make html
+  CMD html
