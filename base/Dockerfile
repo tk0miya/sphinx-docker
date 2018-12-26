@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
+LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 RUN mkdir /docs
 RUN apt-get update \
