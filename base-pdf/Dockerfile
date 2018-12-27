@@ -14,4 +14,4 @@ RUN apt-get install -y \
       texlive-xetex \
  && apt-get autoremove \
  && apt-get clean
-ENTRYPOINT ["make", "pdf"]
+CMD ["pdf"]
