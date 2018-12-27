@@ -1,5 +1,5 @@
 FROM ubuntu:xenial
-MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
+LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 RUN mkdir /docs
 RUN apt-get update \
@@ -18,3 +18,5 @@ RUN apt-get update \
  && apt-get clean
 
 RUN pip3 install Sphinx==1.8.2
+WORKDIR /docs
+ENTRYPOINT ["make"]

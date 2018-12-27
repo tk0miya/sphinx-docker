@@ -1,5 +1,5 @@
 FROM tk0miya/sphinx-base:latest
-MAINTAINER Sphinx Team <https://github.com/sphinx-doc/sphinx>
+LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 RUN apt-get install -y \
       latexmk \
@@ -14,3 +14,4 @@ RUN apt-get install -y \
       texlive-xetex \
  && apt-get autoremove \
  && apt-get clean
+CMD ["pdf"]
