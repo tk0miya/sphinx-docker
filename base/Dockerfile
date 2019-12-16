@@ -17,4 +17,4 @@ RUN apt-get update \
  && apt-get autoremove \
  && apt-get clean
 
-RUN pip3 install Sphinx==2.0.1
+RUN pip3 install Sphinx==2.3.0
