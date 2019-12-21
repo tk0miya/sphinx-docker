@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 LABEL maintainer="Sphinx Team <https://github.com/sphinx-doc/sphinx>"
 
 RUN mkdir /docs
